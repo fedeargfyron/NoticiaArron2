@@ -1,0 +1,35 @@
+.date-container,
+.header-list
+{
+    display: inline-flex;
+}
+
+.date-container > *{
+    margin: .25rem;
+    font-weight: 200;
+    font-size: 1rem;
+}
+
+.header-image{
+    padding-bottom: 1rem;
+}
+
+.header-list{
+    width: 100%;
+    justify-content: center;
+}
+
+.header-list > *{
+    padding: .5rem;
+    font-size: .75rem;
+}
+
+.titles{
+    background-color: #000A2F;
+}
+
+.titles > *{
+    padding: .5rem 1rem;
+    font-size: 1.125rem;
+    color: white;
+}
