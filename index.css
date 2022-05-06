@@ -4,6 +4,10 @@
     display: inline-flex;
 }
 
+.sitios{
+    display: none;
+}
+
 .date-container > *{
     margin: .25rem;
     font-weight: 200;
@@ -11,12 +15,15 @@
 }
 
 .header-image{
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+    max-width: 50%;
 }
 
-.header-list{
-    width: 100%;
+
+.lists-container{
+    min-width: 100%;
     justify-content: center;
+    background-color: #000A2F;
 }
 
 .header-list > *{
@@ -32,4 +39,16 @@
     padding: .5rem 1rem;
     font-size: 1.125rem;
     color: white;
+}
+
+@media only screen and (min-width: 768px){
+    .lists-container{
+        display: inline-flex;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .sitios{
+        display: inline-flex;
+    }
 }
