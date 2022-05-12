@@ -6,28 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="main.css">
+    <script src="https://kit.fontawesome.com/3ce6a1f1a2.js" crossorigin="anonymous"></script>
     <title>Document</title>
 </head>
 <body>
     <header>
-        <li class="header-list">
+        <i class="fas fa-bars"></i>
+        <li class="header-list sitios">
             <ul>INMUEBLES</ul>
             <ul>MOTORES</ul>
             <ul>TRABAJO</ul>
             <ul>PROFESIONALES</ul>
             <ul>FUNEBRES</ul>
         </li>
-        <img class="header-image" alt="La capital logo"/>
-        <li class="header-list titles">
-            <ul>Últimas Noticias</ul>
-            <ul>Ciudad</ul>
-            <ul>Ovación</ul>
-            <ul>Economía</ul>
-            <ul>Región</ul>
-            <ul>Policiales</ul>
-            <ul>Escenario</ul>
-            <ul>Agroclave</ul>
-        </li>
+        <div>
+            <img src="data:image/png;base64,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" class="header-image" alt="La capital logo"/>
+        </div>
+        <div class="lists-container">
+            <li class="header-list titles">
+                <ul>Últimas Noticias</ul>
+                <ul>Ciudad</ul>
+                <ul>Ovación</ul>
+                <ul>Economía</ul>
+            </li>
+            <li class="header-list titles">
+                <ul>Región</ul>
+                <ul>Policiales</ul>
+                <ul>Escenario</ul>
+                <ul>Agroclave</ul>
+            </li>
+        </div>
     </header>
     <main>
         <h1>Ruben anunció su retiro: "Volví por el sueño de ser campeón, me voy feliz y con orgullo"</h1>
@@ -38,55 +46,59 @@
             <p>18:25hs</p>
         </div>
         <section>
-            <img alt="Ruben dando conferencia"/> 
+            <img src="https://media.lacapital.com.ar/p/01a6f08ec27cf3968eebdcbb648b3142/adjuntos/203/imagenes/100/081/0100081217/642x0/smart/51af0a11-649c-40ba-90d8-dbe82ce488d0jpg.jpg" alt="Ruben dando conferencia"/> 
             <p>
-                Tras días de muchas especulaciones en relación al futuro de <strong>Marco <a href="">Ruben</a></strong>, el delantero se encargó de ponerle palabras a la decisión que tomó, que ni más ni menos que el <a href="">retiro</a>
-                del fútbol después del partido del próximo fin de semana frente a Estudiantes. El goleador canalla convocó para una conferencia de prensa este miércoles, a las 18, en el predio de <strong>Arroyo Seco</strong>, 
-                donde confirmó que deja el fútbol.
+                Tras días de muchas especulaciones en relación al futuro de <strong>Marco <a href="">Ruben</a></strong>, el delantero se encargó de ponerle palabras a la 
+                decisión que tomó, que ni más ni menos que el <a href="">retiro</a>del fútbol después del partido del próximo fin de semana frente a Estudiantes. El goleador
+                canalla convocó para una conferencia de prensa este miércoles, a las 18, en el predio de <strong>Arroyo Seco</strong>, donde confirmó que deja el fútbol.
             </p>
             <p>
-                "El sábado ante Estudiantes va a ser mi ultimo partido, es una decisión súper trabajada y súper segura, con bases sólidas y me siento feliz de afrontar este momento con orgullo y que la gente me vea en 
-                la cancha en un gran momento", arrancó el ícono canalla.
+                "El sábado ante Estudiantes va a ser mi ultimo partido, es una decisión súper trabajada y súper segura, con bases sólidas y me siento feliz de afrontar este
+                momento con orgullo y que la gente me vea en la cancha en un gran momento", arrancó el ícono canalla.
             </p>
             <p>
-                "Hay muchos porqués, situaciones y variables que fueron dándose para que se concrete ahora. Cuando vino la pandemia me pude retirar y volví por un sueño para concretar algo con esta camiseta e 
-                increíblemente se dio. Ahora quiero reencontrarme con mis hijos por ejemplo y con mi vida", explicó el goleador y aclaró que en "nada tuvo que el presente y la dirigencia" en su decisión, al momento que 
-                entraban de sorpresa sus compañeros para acompañarlo en su anuncio.
+                "Hay muchos porqués, situaciones y variables que fueron dándose para que se concrete ahora. Cuando vino la pandemia me pude retirar y volví por un sueño 
+                para concretar algo con esta camiseta e increíblemente se dio. Ahora quiero reencontrarme con mis hijos por ejemplo y con mi vida", explicó el goleador 
+                y aclaró que en "nada tuvo que el presente y la dirigencia" en su decisión, al momento que entraban de sorpresa sus compañeros para acompañarlo en su anuncio.
             </p>
         </section>
         <section>
             <h3>La previa</h3>
             <p>
-                Aquellas declaraciones que hizo una vez finalizado el partido ante Independiente, en el que dejó abiertas las puertas del retiro (<strong>“Sigo por esos dos partidos y después veremos”, dijo</strong>), alimentaron 
-                los rumores y especulaciones, pero con el correr de los días se conoció que esa decisión tenía que ver con su despedida de la actividad profesional.
+                Aquellas declaraciones que hizo una vez finalizado el partido ante Independiente, en el que dejó abiertas las puertas del retiro (<strong>“Sigo por esos
+                dos partidos y después veremos”, dijo</strong>), alimentaron los rumores y especulaciones, pero con el correr de los días se conoció que esa decisión tenía
+                que ver con su despedida de la actividad profesional.
             </p>
             <p>
-                <strong>Ruben</strong> había renovado su contrato por un año a fines de diciembre pasado, pero dejaba en claro —como lo hizo en el último tiempo—, que a los seis meses se iba a tomar la licencia de analizar su 
-                presente para ver ver si sentía pleno física, futbolística y emocionalmente para llegar al final del contrato. Indudablemente, Ruben sintió que este era el momento de decirle adiós al fútbol de 
-                manera profesional y ya diagramó todo para que la despedida fuera en el <a href="">Gigante</a>.
+                <strong>Ruben</strong> había renovado su contrato por un año a fines de diciembre pasado, pero dejaba en claro —como lo hizo en el último tiempo—, que a los 
+                seis meses se iba a tomar la licencia de analizar su presente para ver ver si sentía pleno física, futbolística y emocionalmente para llegar al final del contrato. 
+                Indudablemente, Ruben sintió que este era el momento de decirle adiós al fútbol de manera profesional y ya diagramó todo para que la despedida fuera en el 
+                <a href="">Gigante</a>.
             </p>
             <figure>
-                <img alt ="Ruben aplaudiendo"/>
+                <img src="https://media.lacapital.com.ar/p/76c02eea44b555b49fa2133a53cda362/adjuntos/203/imagenes/100/077/0100077564/642x0/smart/marco-viene-convertir-su-gol-104-central-es-el-maximo-artillero-canalla-y-la-ciudad.jpg" alt ="Ruben aplaudiendo"/>
                 <figcaption>Marco viene de convertir su gol 104 en Central. Es el máximo artillero canalla y de la ciudad.</figcaption>
             </figure>
             <p>
-                De hecho, esa molestia que sintió en el sóleo lo mermó físicamente, pero de inmediato decidió bajarse del partido contra Huracán para que su físico no corriera riesgos y pudiera estar a disposición 
-                del cuerpo técnico para el último partido del campeonato.
+                De hecho, esa molestia que sintió en el sóleo lo mermó físicamente, pero de inmediato decidió bajarse del partido contra Huracán para que su físico no corriera 
+                riesgos y pudiera estar a disposición del cuerpo técnico para el último partido del campeonato.
             </p>
             <p>
-                Con el hermetismo que lo caracteriza, <strong>Ruben</strong> nunca dijo nada al respecto, pero gente que convive con el goleador en el día a día en <strong>Arroyo Seco</strong> dejó entrever que el 
-                partido contra Estudiantes iba a ser el último en su carrera, al menos en el <strong><a href="">Gigante</a> de Arroyito</strong> (a los pocos días Central jugará frente a Sol de Mayo por Copa Argentina).
+                Con el hermetismo que lo caracteriza, <strong>Ruben</strong> nunca dijo nada al respecto, pero gente que convive con el goleador en el día a día en <strong>Arroyo Seco</strong> 
+                dejó entrever que el partido contra Estudiantes iba a ser el último en su carrera, al menos en el <strong><a href="">Gigante</a> de Arroyito</strong> (a los pocos días Central 
+                jugará frente a Sol de Mayo por Copa Argentina).
             </p>
             <p>
-                Y ahora, frente a la convocatoria a la conferencia para este jueves en Arroyo Seco, no caben dudas de que en la misma <strong>Ruben</strong> confirmará que colgará los botines frente a los hinchas 
-                que lo idolatran desde hace tiempo y más todavía en el último tiempo, luego de que el delantero se convirtiera en el máximo goleador de la historia canalla en el profesionalismo, <strong>superando 
-                    la marca que ostentaba el Torito Aguirre</strong>. De yapa, con el gol que le convirtió al Rojo se transformó en el máximo anotador del fútbol rosarino con una camiseta, en primera división.
+                Y ahora, frente a la convocatoria a la conferencia para este jueves en Arroyo Seco, no caben dudas de que en la misma <strong>Ruben</strong> confirmará que colgará 
+                los botines frente a los hinchas  que lo idolatran desde hace tiempo y más todavía en el último tiempo, luego de que el delantero se convirtiera en el máximo goleador
+                de la historia canalla en el profesionalismo, <strong>superando la marca que ostentaba el Torito Aguirre</strong>. De yapa, con el gol que le convirtió al Rojo se 
+                transformó en el máximo anotador del fútbol rosarino con una camiseta, en primera división.
             </p>
             <p>
-                Hay nueva función de Central el sábado en el Arroyito, pero será la última de <strong>Marco Ruben</strong>, el último gran ídolo canalla. Para él, será una <strong>“despedida gigante”</strong>.
+                Hay nueva función de Central el sábado en el Arroyito, pero será la última de <strong>Marco Ruben</strong>, el último gran ídolo canalla. Para él, será una 
+                <strong>“despedida gigante”</strong>.
             </p>
         </section>
     </main>
-    
 </body>
 </html>

@@ -4,6 +4,20 @@
     display: inline-flex;
 }
 
+.fa-bars{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
+
+.fa-bars:hover{
+    cursor: pointer;
+}
+
+.sitios{
+    display: none;
+}
+
 .date-container > *{
     margin: .25rem;
     font-weight: 200;
@@ -11,12 +25,15 @@
 }
 
 .header-image{
-    padding-bottom: 1rem;
+    padding: 1rem 0;
+    max-width: 40%;
 }
 
-.header-list{
-    width: 100%;
-    justify-content: center;
+
+.lists-container{
+    min-width: 100%;
+    
+    background-color: #000A2F;
 }
 
 .header-list > *{
@@ -26,10 +43,33 @@
 
 .titles{
     background-color: #000A2F;
+    display: none;
 }
 
 .titles > *{
     padding: .5rem 1rem;
     font-size: 1.125rem;
     color: white;
+}
+
+
+@media only screen and (min-width: 768px){
+    .lists-container{
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .fas{
+        display: none !important;
+    }
+
+    .titles{
+        display: inline-flex;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    .sitios{
+        display: inline-flex;
+    }
 }
