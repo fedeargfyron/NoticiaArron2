@@ -2,10 +2,14 @@ body{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 header{
     text-align: center;
+    position: fixed;
+    width: 100%;
+    background-color: white;
 }
 
 
@@ -13,6 +17,7 @@ main{
     max-width: 800px;
     margin: auto;
     padding: 0 .5rem;
+    padding-top: 15rem;
 }
 
 h1{

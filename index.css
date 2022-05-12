@@ -4,6 +4,16 @@
     display: inline-flex;
 }
 
+.fa-bars{
+    position: absolute;
+    left: 1rem;
+    top: 1.5rem;
+}
+
+.fa-bars:hover{
+    cursor: pointer;
+}
+
 .sitios{
     display: none;
 }
@@ -16,13 +26,13 @@
 
 .header-image{
     padding: 1rem 0;
-    max-width: 50%;
+    max-width: 40%;
 }
 
 
 .lists-container{
     min-width: 100%;
-    justify-content: center;
+    
     background-color: #000A2F;
 }
 
@@ -33,6 +43,7 @@
 
 .titles{
     background-color: #000A2F;
+    display: none;
 }
 
 .titles > *{
@@ -41,8 +52,18 @@
     color: white;
 }
 
+
 @media only screen and (min-width: 768px){
     .lists-container{
+        display: inline-flex;
+        justify-content: center;
+    }
+
+    .fas{
+        display: none !important;
+    }
+
+    .titles{
         display: inline-flex;
     }
 }
