@@ -29,10 +29,8 @@
     max-width: 40%;
 }
 
-
 .lists-container{
     min-width: 100%;
-    
     background-color: #000A2F;
 }
 
@@ -51,7 +49,6 @@
     font-size: 1.125rem;
     color: white;
 }
-
 
 @media only screen and (min-width: 768px){
     .lists-container{

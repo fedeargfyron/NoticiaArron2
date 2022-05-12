@@ -12,12 +12,11 @@ header{
     background-color: white;
 }
 
-
 main{
     max-width: 800px;
     margin: auto;
     padding: 0 .5rem;
-    padding-top: 15rem;
+    padding-top: 6rem;
 }
 
 h1{
@@ -28,6 +27,7 @@ h2{
     font-size: 1.75rem;
     font-weight: 200;
 }
+
 h3{
     font-size: 1.5rem;
 }
@@ -50,4 +50,16 @@ img{
     margin: auto;
     max-width: 100%;
     align-self: center;
+}
+
+@media only screen and (min-width: 768px){
+    main{
+        padding-top: 9rem;
+    }
+}
+
+@media only screen and (min-width: 1024px){
+    main{
+        padding-top: 13rem;
+    }
 }
