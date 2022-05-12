@@ -52,6 +52,11 @@ img{
     align-self: center;
 }
 
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
 @media only screen and (min-width: 768px){
     main{
         padding-top: 9rem;
